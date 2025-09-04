@@ -1,5 +1,7 @@
 export const metadata = {
-  title : "puckig about"
+  title : {
+    absolute : "packing about"
+  }
 }
 
 export default function About() {

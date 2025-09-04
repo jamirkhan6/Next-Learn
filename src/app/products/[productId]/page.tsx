@@ -7,9 +7,13 @@ type Props = {
 // Generate metadata dynamically for each product
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const id = params.productId;
+  const title = await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`iphone ${id}`)
+    }, 100);
+  })
   return {
-    title: `Product ${id}`,
-    
+    title: `Product ${title}`,
   };
 }
 
