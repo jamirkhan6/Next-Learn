@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Metadata } from "next";
 import Link from "next/link";
+import { ErrorWrapper } from "./error-wrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Link href="/login">login</Link>
           <Link href="/dashboard">dashboard</Link>
         </header>
+        {/* <ErrorWrapper>{children}</ErrorWrapper> */}
         {children}
       </body>
     </html>
