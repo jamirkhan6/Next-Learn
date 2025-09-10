@@ -29,6 +29,7 @@ export default function RootLayout({
         </header>
         {/* <ErrorWrapper>{children}</ErrorWrapper> */}
         {children}
+        <footer className="bg-gray-300 p-6 text-center mt-6">footer</footer>
       </body>
     </html>
   );
